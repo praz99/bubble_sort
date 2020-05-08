@@ -12,3 +12,22 @@ def bubble_sort(arr)
 end
 
 p bubble_sort([99, 88, 77, 66, 55, 44, 33, 22, 11, 0])
+
+# bubble_sort_by
+
+def bubble_sort_by(arr)
+  count = arr.length - 1
+  until count.zero?
+    count.times do |i|
+      check = yield arr[i], arr[i + 1]
+      arr[i], arr[i + 1] = arr [i + 1], arr[i] if check.positive?
+    end
+    count -= 1
+  end
+  p arr
+end
+
+bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
+  left.length - right.length
+end
+
