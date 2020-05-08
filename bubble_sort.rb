@@ -1,10 +1,12 @@
+# bubble_sort
+
 def bubble_sort(arr)
-  iteration = arr.length - 1
-  until iteration.zero?
-    iteration.times do |i|
+  count = arr.length - 1
+  until count.zero?
+    count.times do |i|
       arr[i], arr[i + 1] = arr[i + 1], arr[i] if arr[i] > arr[i + 1]
     end
-    iteration -= 1
+    count -= 1
   end
   arr
 end
