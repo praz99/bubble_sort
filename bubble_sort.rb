@@ -11,8 +11,6 @@ def bubble_sort(arr)
   arr
 end
 
-bubble_sort([99, 88, 77, 66, 55, 44, 33, 22, 11, 0])
-
 # bubble_sort_by
 
 def bubble_sort_by(arr)
