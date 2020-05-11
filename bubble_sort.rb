@@ -1,4 +1,3 @@
-# bubble_sort
 def bubble_sort(arr)
   count = arr.length - 1
   until count.zero?
@@ -10,7 +9,6 @@ def bubble_sort(arr)
   arr
 end
 
-# bubble_sort_by
 def bubble_sort_by(arr)
   count = arr.length - 1
   until count.zero?
